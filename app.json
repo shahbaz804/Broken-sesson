@@ -1,18 +1,21 @@
 {
-  "name": "♥️Broken MD PAIR♥️",
-  "description": "SESSION ID GENERATOR FOR WHATSAPP BOTS",
-  "logo": "https://files.catbox.moe/1enaz9.png",
-  "repository": "https://github.com/shahbaz804/Broken-sesson.git",
-  "keywords": ["@Broken-MD"],
-  "success_url": "/", 
-  "buildpacks": [
-    { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" }
-  ],
-  "env": {      
-    "MESSAGE": {
-      "description": "Msg Attached With Session ID",
-      "value": "🔰 BY || Broken-MD OFFICIAL 🔰",
-      "required": false 
+  "name": "BROKEN-MD",
+  "description": "BROKEN-MD WhatsApp bot made by BROKEN MD official",
+  "logo": "https://n.uguu.se/BlGoHUJU.jpg",
+  "keywords": ["bot","BROKEN-MD","BROKEN-MD"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+        "description": "Put the BROKEN-MD session-id here.",
+        "required": true
     }
-  }
+},
+
+"buildpacks": [
+    {
+        "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+],
+"stack": "heroku-24"
 }
