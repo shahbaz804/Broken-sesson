@@ -1,33 +1,18 @@
 {
-  "name": "Broken",
-  "description": "Jexploit advanced Whatsapp bot!",
-  "keywords": [],
-  "repository": "https://github.com/shahbaz804/Minibot.git",
-  "stack": "heroku-24",
-  "addons": [
-    {
-      "plan": "heroku-postgresql"
-    }
-  ],
-  "scripts": {
-    "start": "node index.js"
-  },
-  "env": {
-    "SESSION_ID": {
-      "description": "Session id must start with: BROKEN MINI BOT, BROKEN MINI BOT, BROKEN MINI BOT, BROKEN MINI BOT, or kevin~",
-      "value": "",
-      "required": false
-    }
-  },
+  "name": "♥️Broken MD PAIR♥️",
+  "description": "SESSION ID GENERATOR FOR WHATSAPP BOTS",
+  "logo": "https://files.catbox.moe/1enaz9.png",
+  "repository": "https://github.com/shahbaz804/Broken-sesson.git",
+  "keywords": ["@Broken-MD"],
+  "success_url": "/", 
   "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
-    },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" }
+  ],
+  "env": {      
+    "MESSAGE": {
+      "description": "Msg Attached With Session ID",
+      "value": "🔰 BY || Broken-MD OFFICIAL 🔰",
+      "required": false 
     }
-  ]
+  }
 }
